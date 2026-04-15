@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Proyectostle</title>
+</head>
+<body>
+    <h1>PLATAFORMA DE GESTION DE PROYECTOS</h1>
+    <p>Bienvenidos a nuestra plataforma de gestión de proyectos</p>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="equipo.html">Equipo</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Formulario para agregar proyectos -->
+    <section>
+        <h2>Agregar Nuevo Proyecto</h2>
+        <form action="#" method="post">
+            <!-- 1. Datos principales -->
+            <fieldset>
+                <legend>📋 Datos Principales</legend>
+                
+                <label for="nombre_proyecto">Nombre del proyecto:</label>
+                <input type="text" id="nombre_proyecto" name="nombre_proyecto" required>
+                <br><br>
+                
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea>
+            </fieldset>
+            <br>
+
+            <!-- 2. Fechas -->
+            <fieldset>
+                <legend>📅 Fechas</legend>
+                
+                <label for="fecha_inicio">Fecha de inicio:</label>
+                <input type="date" id="fecha_inicio" name="fecha_inicio" required>
+                <br><br>
+                
+                <label for="fecha_fin">Fecha de finalización:</label>
+                <input type="date" id="fecha_fin" name="fecha_fin" required>
+            </fieldset>
+            <br>
+
+            <!-- 3. Organización -->
+            <fieldset>
+                <legend>👥 Organización</legend>
+                
+                <label for="responsable">Responsable:</label>
+                <input type="text" id="responsable" name="responsable" placeholder="Nombre del responsable" required>
+                <!-- También puedes descomentar la siguiente línea si prefieres un select con opciones -->
+                <!--
+                <select id="responsable" name="responsable">
+                    <option value="">Seleccione un responsable</option>
+                    <option value="Ana García">Ana García</option>
+                    <option value="Carlos López">Carlos López</option>
+                    <option value="María Rodríguez">María Rodríguez</option>
+                </select>
+                -->
+            </fieldset>
+            <br>
+
+            <!-- 4. Estado del proyecto -->
+            <fieldset>
+                <legend>⚡ Estado del Proyecto</legend>
+                
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado" required>
+                    <option value="">Seleccione un estado</option>
+                    <option value="pendiente">Pendiente</option>
+                    <option value="en_progreso">En progreso</option>
+                    <option value="finalizado">Finalizado</option>
+                </select>
+            </fieldset>
+            <br>
+
+            <!-- 5. Prioridad -->
+            <fieldset>
+                <legend>🔔 Prioridad</legend>
+                
+                <label for="prioridad">Prioridad:</label>
+                <select id="prioridad" name="prioridad" required>
+                    <option value="">Seleccione una prioridad</option>
+                    <option value="alta">Alta</option>
+                    <option value="media">Media</option>
+                    <option value="baja">Baja</option>
+                </select>
+            </fieldset>
+            <br>
+
+            <!-- Botones del formulario -->
+            <button type="submit">Agregar Proyecto</button>
+            <button type="reset">Limpiar Formulario</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Plataforma de Gestión de Proyectos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
